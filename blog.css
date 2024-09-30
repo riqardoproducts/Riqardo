@@ -1,0 +1,116 @@
+/* Basic styling for the blog page */
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Blog container */
+.blog-container {
+  max-width: 100%;
+  margin: 0px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.blog-header {
+  text-align: center;
+}
+
+.blog-header img {
+  width: 90%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-position: top;
+}
+.blog-header2 img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.blog-header3 img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.blog-header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+.blog-content {
+  line-height: 1.9;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+.blog-content h1 {
+  font-size: 32px;
+  color: #444;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.blog-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-header h1,
+  .blog-content {
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .blog-header h1 {
+    font-size: 30px;
+  }
+
+  .blog-content h1 {
+    font-size: 28px;
+  }
+
+  .blog-content p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog-header img {
+    height: auto;
+  }
+
+  .blog-header h1,
+  .blog-content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .blog-header h1 {
+    font-size: 24px;
+  }
+
+  .blog-content h1 {
+    font-size: 22px;
+  }
+
+  .blog-content p {
+    font-size: 14px;
+  }
+}
