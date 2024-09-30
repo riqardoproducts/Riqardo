@@ -110,44 +110,44 @@
           <img src="./images/p1.png" alt="Product 1" />
           <h3>Riqardo Instant French Vanilla Coffee</h3>
           <p>100gm</p>
-          <p class="price">&#8377; 500</p>
-          <button class="add-to-cart">Add to Cart</button>
+          <p class="price">&#8377; 399</p>
+          <button class="add-to-cart" onclick="sendToWhatsApp('Riqardo Instant French Vanilla Coffee','100gm', '399')">BUY NOW</button>
         </div>
         <div class="product-card">
           <img src="./images/b6.png" alt="Product 2" />
           <h3>Riqardo Instant Caramel Coffee</h3>
           <p>100gm</p>
-          <p class="price">&#8377; 500</p>
-          <button class="add-to-cart">Add to Cart</button>
+          <p class="price">&#8377; 299</p>
+          <button class="add-to-cart" onclick="sendToWhatsApp('Riqardo Instant Caramel Coffee','100gm', '299')">BUY NOW</button>
         </div>
         <div class="product-card">
           <img src="./images/b7.png" alt="Product 3" />
           <h3>Riqardo Instant English Butterscotch coffee</h3>
           <p>100gm</p>
-          <p class="price">&#8377; 500</p>
-          <button class="add-to-cart">Add to Cart</button>
+          <p class="price">&#8377; 399</p>
+          <button class="add-to-cart" onclick="sendToWhatsApp('Riqardo Instant English Butterscotch coffee','100gm', '399')">BUY NOW</button>
         </div>
         <div class="product-card">
           <img src="./images/b12.png" alt="Product 4" />
           <h3>Riqardo Instant Masala Tea</h3>
           <p>100gm</p>
-          <p class="price">&#8377; 500</p>
-          <button class="add-to-cart">Add to Cart</button>
+          <p class="price">&#8377; 299</p>
+          <button class="add-to-cart" onclick="sendToWhatsApp('Riqardo Instant Masala Tea','100gm', '299')">BUY NOW</button>
         </div>
 
         <div class="product-card">
           <img src="./images/p5.png" alt="Product 5" />
           <h3>Riqardo Instant Cardamom Tea</h3>
           <p>100gm</p>
-          <p class="price">&#8377; 500</p>
-          <button class="add-to-cart">Add to Cart</button>
+          <p class="price">&#8377; 399</p>
+          <button class="add-to-cart" onclick="sendToWhatsApp('Riqardo Instant Cardamom Tea','100gm', '399')">BUY NOW</button>
         </div>
         <div class="product-card">
           <img src="./images/b1.png" alt="Product 6" />
           <h3>Riqardo Cinnamon</h3>
           <p>100gm</p>
-          <p class="price">&#8377; 500</p>
-          <button class="add-to-cart">Add to Cart</button>
+          <p class="price">&#8377; 399</p>
+          <button class="add-to-cart" onclick="sendToWhatsApp('Riqardo Cinnamon','100gm', '399')">BUY NOW</button>
         </div>
       </div>
     </section>
@@ -419,4 +419,21 @@
     </div>
   </body>
   <script src="./script.js"></script>
+
+  <script>
+    function sendToWhatsApp(productName, productQuantity, productPrice) {
+      // WhatsApp message text
+      let message = `Hello, I want to buy ${productQuantity} unit(s) of ${productName} which costs ₹${productPrice}.`;
+      // WhatsApp phone number
+      let phoneNumber = "919633730600"; // Change this to your WhatsApp number
+
+      // Create WhatsApp link
+      let whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        message
+      )}`;
+
+      // Redirect to WhatsApp
+      window.open(whatsappLink, "_blank");
+    }
+  </script>
 </html>
