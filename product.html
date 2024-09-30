@@ -7,14 +7,44 @@
     <link rel="stylesheet" href="./product.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
-  <body>
+  <body><header>
+    <nav class="navbar" id="nav">
+      <div class="logo">
+        <a href="#" class="nav-branding"
+          ><img class="logo" src="./images/Riqardo-01.png"
+        /></a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link">Contact us</a></li>
+        <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item">
+          <a href="./product.html" class="nav-link">Products</a>
+          <ul class="dropdown">
+            <li><a href="#">Product1</a></li>
+            <li><a href="#">Product2</a></li>
+            <li><a href="#">Product3</a></li>
+            <li><a href="#">Product4</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Buy on Amazon</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
     <div class="section-1">
       <div class="content-1">
         <div class="sub-content">
-          <h1>SHOP</h1>
+          <h1>Instant Coffee Products</h1>
           <p>
-            Nibh tellus molestie nunc non blandit. Mi tempus imperdiet nulla
-            malesuada pellentesque elit
+            A journey across the globe.Coffee lovers know that a good cup of coffee is more than just a beverage—it’s an experience. But with so many varieties, flavors, and origins, what makes a coffee truly the best in the world?
           </p>
         </div>
       </div>
@@ -114,7 +144,18 @@
           </div>
         </div>
       </div>
-      <div class="section-2-right"><h1>hI</h1></div>
+      <div class="section-2-right">
+        <h1>Instant Cofee</h1>
+        <ul>
+          <li> <i class="ph ph-minus-circle"></i>Riqardo Instant Coffee </li>
+          
+          <li><i class="ph ph-minus-circle"></i>Riqardo Instant Coffee classic </li>
+          <li><i class="ph ph-minus-circle"></i>Riqardo Instant coffee hazelnut</li>
+          <li><i class="ph ph-minus-circle"></i>Riqardo Instant coffee Vanilla</li>
+          <li><i class="ph ph-minus-circle"></i>Riqardo Instant coffee butterscotch</li>
+          <li><i class="ph ph-minus-circle"></i>Riqardo Instant coffee caramel</li>
+        </ul>
+      </div>
     </div>
   </body>
   <script src="./script.js"></script>
@@ -124,10 +165,12 @@
       // WhatsApp message text
       let message = `Hello, I want to buy ${productQuantity} unit(s) of ${productName} which costs ₹${productPrice}.`;
       // WhatsApp phone number
-      let phoneNumber = "919633730600"; // Change this to your WhatsApp number
+      let phoneNumber = "918606631192"; // Change this to your WhatsApp number
 
       // Create WhatsApp link
-      let whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      let whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        message
+      )}`;
 
       // Redirect to WhatsApp
       window.open(whatsappLink, "_blank");
