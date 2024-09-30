@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./product.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="section-1">
+      <div class="content-1">
+        <div class="sub-content">
+          <h1>SHOP</h1>
+          <p>
+            Nibh tellus molestie nunc non blandit. Mi tempus imperdiet nulla
+            malesuada pellentesque elit
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section-2">
+      <div class="section-2-left">
+        <div class="sec-2-content-1">
+          <div class="sec-2-card">
+            <div class="card-img"><img src="./images/tea.jpg" alt="" /></div>
+            <div class="card-head"><h2>Riqardo Instant Cardamom</h2></div>
+            <div class="card-details"><p>Quantity:350g</p></div>
+            <div class="card-price">
+              <h3><i class="ph ph-currency-inr"></i>299</h3>
+            </div>
+            <div class="buy-button">
+              <button
+                onclick="sendToWhatsApp('Riqardo Instant Cardamom','350g', '299')"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="sec-2-card">
+            <div class="card-img"><img src="./images/tea.jpg" alt="" /></div>
+            <div class="card-head"><h2>Riqardo Instant Masala</h2></div>
+            <div class="card-details"><p>Quantity:350g</p></div>
+            <div class="card-price">
+              <h3><i class="ph ph-currency-inr"></i>299</h3>
+            </div>
+            <div class="buy-button">
+              <button
+                onclick="sendToWhatsApp('Riqardo Instant Masala','350g', '299')"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="sec-2-card">
+            <div class="card-img"><img src="./images/tea.jpg" alt="" /></div>
+            <div class="card-head"><h2>Riqardo Instant Pink</h2></div>
+            <div class="card-details"><p>Quantity:300g</p></div>
+            <div class="card-price">
+              <h3><i class="ph ph-currency-inr"></i>399</h3>
+            </div>
+            <div class="buy-button">
+              <button
+                onclick="sendToWhatsApp('Riqardo Instant Pink','300g', '399')"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="sec-2-card">
+            <div class="card-img"><img src="./images/tea.jpg" alt="" /></div>
+            <div class="card-head"><h2>Riqardo Cardamom Sachet</h2></div>
+            <div class="card-details"><p>Quantity:100g</p></div>
+            <div class="card-price">
+              <h3><i class="ph ph-currency-inr"></i>249</h3>
+            </div>
+            <div class="buy-button">
+              <button
+                onclick="sendToWhatsApp('Riqardo Cardamom Sachet','100g', '249')"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="sec-2-card">
+            <div class="card-img"><img src="./images/tea.jpg" alt="" /></div>
+            <div class="card-head"><h2>Riqardo Masala Tea</h2></div>
+            <div class="card-details"><p>Quantity:500g</p></div>
+            <div class="card-price">
+              <h3><i class="ph ph-currency-inr"></i>599</h3>
+            </div>
+            <div class="buy-button">
+              <button
+                onclick="sendToWhatsApp('Riqardo Masala Tea','500g', '599')"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="sec-2-card">
+            <div class="card-img"><img src="./images/tea.jpg" alt="" /></div>
+            <div class="card-head"><h2>Riqardo Instant Coffee</h2></div>
+            <div class="card-details"><p>Quantity:500g</p></div>
+            <div class="card-price">
+              <h3><i class="ph ph-currency-inr"></i>599</h3>
+            </div>
+            <div class="buy-button">
+              <button
+                onclick="sendToWhatsApp('Riqardo Instant Coffee','500g', '599')"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-2-right"><h1>hI</h1></div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+
+  <script>
+    function sendToWhatsApp(productName, productQuantity, productPrice) {
+      // WhatsApp message text
+      let message = `Hello, I want to buy ${productQuantity} unit(s) of ${productName} which costs ₹${productPrice}.`;
+      // WhatsApp phone number
+      let phoneNumber = "919633730600"; // Change this to your WhatsApp number
+
+      // Create WhatsApp link
+      let whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+      // Redirect to WhatsApp
+      window.open(whatsappLink, "_blank");
+    }
+  </script>
+</html>
