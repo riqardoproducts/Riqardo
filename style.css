@@ -62,7 +62,7 @@ a {
   margin-left: 10px;
   object-fit: cover;
 }
-.dropdown {
+/* .dropdown {
   position: absolute;
   background-color: white;
   list-style: none;
@@ -72,16 +72,16 @@ a {
   opacity: 0;
   visibility: hidden;
   transition: transform 1s, opacity 1s;
-}
+} */
 
 .nav-menu li {
   position: relative;
 }
 
-.nav-menu li:hover .dropdown {
+/* .nav-menu li:hover .dropdown {
   opacity: 1;
   visibility: visible;
-}
+} */
 
 .dropdown li {
   width: 150px;
