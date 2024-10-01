@@ -127,14 +127,15 @@ a {
     transform: translateY(-8px) rotate(-45deg);
   }
   .nav-menu {
-    position: fixed;
+    position: absolute;
     left: -110%;
     top: 115px;
     gap: 0;
     flex-direction: column;
-    background-color: white;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
     width: 50%;
-    height: 80vh;
+    height: 83vh;
     transition: 0.3s;
   }
   .nav-item {
