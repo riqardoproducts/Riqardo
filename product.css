@@ -14,9 +14,10 @@ header {
     list-style: none;
   }
   a {
-    color: green;
+    color: #214842;
     text-decoration: none;
     font-size: 16px;
+    font-weight: bold;
   }
   
   .navbar {
@@ -27,6 +28,12 @@ header {
     padding: 0 24px;
     background-color: transparent;
     transition: background-color 1s ease;
+  }
+
+  .nav-item a {
+    color: #214842;
+    text-decoration: none;
+    font-size: 16px;
   }
   .navbar.lazy-nav {
     background-color: white;

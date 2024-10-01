@@ -1,4 +1,3 @@
-
 html,
 body {
   font-family: "Nunito Sans", sans-serif;
@@ -19,9 +18,10 @@ li {
   list-style: none;
 }
 a {
-  color: green;
+  color: #214842;
   text-decoration: none;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .navbar {
@@ -32,6 +32,12 @@ a {
   padding: 0 24px;
   background-color: transparent;
   transition: background-color 1s ease;
+}
+
+.nav-item a {
+  color: #214842;
+  text-decoration: none;
+  font-size: 16px;
 }
 .navbar.lazy-nav {
   background-color: white;
@@ -120,7 +126,7 @@ a {
     transform: translateY(-8px) rotate(-45deg);
   }
   .nav-menu {
-    position:fixed;
+    position: fixed;
     left: -110%;
     top: 115px;
     gap: 0;
@@ -139,8 +145,6 @@ a {
   .nav-menu.active {
     left: 0;
   }
-
-
 }
 .container-1 {
   height: 110vh;
@@ -409,7 +413,7 @@ a {
   z-index: 10;
 }
 
-.fade-container { 
+.fade-container {
   position: relative;
   min-height: 80vh;
 }
@@ -496,13 +500,13 @@ a {
 .js-contents {
   padding: 10px;
 }
-.num{
+.num {
   font-size: 55px;
   color: #258f67;
   font-weight: 1000;
 }
-.span-contents{
-    font-size: 55px;
+.span-contents {
+  font-size: 55px;
   color: #258f67;
   font-weight: 1000;
 }
@@ -688,9 +692,9 @@ a {
   padding-left: 10px;
   width: 95%;
 }
-.sub-right-2-contents H3{
-  padding: 0PX;
-  margin: 0PX;
+.sub-right-2-contents H3 {
+  padding: 0px;
+  margin: 0px;
 }
 .date {
   display: flex;
@@ -772,7 +776,6 @@ img {
   color: #214842;
 }
 .sub-section-6-container p {
-    
   color: #556260;
 }
 .image-section4 {
@@ -858,20 +861,20 @@ img {
 }
 .container-6 {
   display: flex;
-  justify-content: center; 
-  align-items: center;      
+  justify-content: center;
+  align-items: center;
   background-color: white;
-  max-width: 100%;        
-  width: 100%;             
+  max-width: 100%;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;           
-  min-height: 100vh;        
+  margin: 0 auto;
+  min-height: 100vh;
 }
 
 .left-column {
   flex: 0.5;
-  text-align: center;       
+  text-align: center;
   margin-top: 120px;
   padding-right: 30px;
 }
@@ -916,7 +919,7 @@ img {
 .right-column {
   flex: 1;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   gap: 30px;
   align-items: center;
   margin-top: 20px;
@@ -972,19 +975,18 @@ img {
   font-family: "Montserrat", sans-serif;
   color: #6b6b6b;
 }
-.js-content{
+.js-content {
   margin-top: 50px;
 }
 @media (max-width: 1200px) {
   .section-1 {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
   }
-  .container-1{
-    height:170vh;
-
+  .container-1 {
+    height: 170vh;
   }
-  .container-2{
+  .container-2 {
     margin-top: 50px;
   }
   .left-1 {
@@ -1007,9 +1009,9 @@ img {
     top: 8%;
     width: 30%;
   }
-.fade-container {
-  position: static;
-}
+  .fade-container {
+    position: static;
+  }
   .fading-images {
     top: 0;
     object-fit: contain;
@@ -1056,8 +1058,8 @@ img {
   .js-section {
     flex-wrap: wrap;
     text-align: center;
-    }
-  
+  }
+
   .js-section div {
     flex: 1 1 50%;
   }
@@ -1092,7 +1094,7 @@ img {
     width: 100%;
     padding: 20px;
   }
-  .sub-section-2{
+  .sub-section-2 {
     flex-direction: column-reverse;
   }
   .sub-section-2-right-1 {
@@ -1108,66 +1110,66 @@ img {
     flex-direction: column;
     padding: 20px;
     align-items: center;
-}
+  }
 
-.left-column {
+  .left-column {
     margin-left: 0;
     margin-top: 40px;
     text-align: center;
-}
+  }
 
-.right-column {
+  .right-column {
     flex-direction: column;
     gap: 20px;
     margin-top: 40px;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.image-column .cannabis-image {
+  .image-column .cannabis-image {
     width: 100%;
     height: auto;
     margin-top: 20px;
-}
+  }
 
-.benefits-column {
+  .benefits-column {
     margin-top: 30px;
-}
+  }
 
-.benefit {
+  .benefit {
     margin-top: 20px;
-}
+  }
 
-.left-column .structure-image {
+  .left-column .structure-image {
     display: none;
-}
+  }
   .container-4 {
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.image-section4 {
+  .image-section4 {
     width: 100%;
-}
+  }
 
-.image-section4 img {
+  .image-section4 img {
     width: 90%;
     height: auto;
-}
+  }
 
-.content-section4 {
+  .content-section4 {
     max-width: 100%;
     padding: 50px 20px;
-}
+  }
 
-.content-section4 h1 {
+  .content-section4 h1 {
     font-size: 28px;
-}
+  }
 
-.content-section4 p {
+  .content-section4 p {
     font-size: 16px;
     line-height: 26px;
-}
+  }
   .products-Section2 {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row for tablets */
     gap: 30px; /* Reduce the gap between cards */
@@ -1196,66 +1198,66 @@ img {
   .container-6 {
     padding: 10px;
     align-items: center;
-}
+  }
 
-.left-column h1 {
+  .left-column h1 {
     font-size: 1.75rem;
-}
+  }
 
-.left-column p {
+  .left-column p {
     font-size: 0.9375rem;
-}
+  }
 
-.right-column {
+  .right-column {
     gap: 10px;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.benefit .text h3 {
+  .benefit .text h3 {
     font-size: 1.125rem;
-}
+  }
 
-.benefit .text p {
+  .benefit .text p {
     font-size: 0.9375rem;
-}
+  }
 
-.image-column .cannabis-image {
+  .image-column .cannabis-image {
     width: 100%;
     height: auto;
-}
+  }
 
-.btn6 {
+  .btn6 {
     font-size: 0.875rem;
     padding: 10px 20px;
-}
+  }
   .image-section4 img {
     width: 100%;
     height: auto;
     margin-top: 20px;
-}
+  }
 
-.content-section4 {
+  .content-section4 {
     padding: 30px 15px;
-}
+  }
 
-.content-section4 h1 {
+  .content-section4 h1 {
     font-size: 24px;
-}
+  }
 
-.content-section4 p {
+  .content-section4 p {
     font-size: 14px;
     line-height: 22px;
-}
+  }
 
-.btn4-section p {
+  .btn4-section p {
     font-size: 28px;
-}
+  }
 
-.btn4-section .btn4 {
+  .btn4-section .btn4 {
     padding: 10px 20px;
     font-size: 14px;
-}
+  }
   .container-2 {
     width: 100%;
     margin-top: 80px;
@@ -1285,22 +1287,20 @@ img {
   .sub-section-6-container {
     margin-top: 30px;
   }
-  .sub-section-6-container h2{
+  .sub-section-6-container h2 {
     font-size: 20px;
   }
-
 }
 @media (max-width: 756px) {
   .section-1 {
     display: flex;
     flex-direction: column;
-
   }
   .left-1 {
     width: 100%;
   }
 
-  .container-2{
+  .container-2 {
     width: 100%;
     margin-top: 50px;
   }
@@ -1332,7 +1332,6 @@ img {
     justify-content: center;
   }
   .fade-container {
-    
     top: 5%;
     min-height: 70vh;
   }
@@ -1494,61 +1493,61 @@ img {
     width: 100%; /* Ensure button takes full width on mobile */
     padding: 10px 15px; /* Adjust padding for smaller screens */
   }
-  .sub-section-2-left-content{
+  .sub-section-2-left-content {
     width: 100%;
     border-bottom-left-radius: 20px;
   }
 }
 @media (max-width: 400px) {
-  .container-2{
-    margin-top: 100px ;
+  .container-2 {
+    margin-top: 100px;
   }
 }
 @media (max-width: 480px) {
   .left-column h1 {
     font-size: 1.5rem;
-}
+  }
 
-.left-column p {
+  .left-column p {
     font-size: 0.875rem;
-}
+  }
 
-.benefit .text h3 {
+  .benefit .text h3 {
     font-size: 1rem;
-}
+  }
 
-.benefit .text p {
+  .benefit .text p {
     font-size: 0.875rem;
-}
+  }
 
-.btn6 {
+  .btn6 {
     font-size: 0.75rem;
     padding: 8px 16px;
-}
+  }
   .image-section4 img {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
   }
 
   .content-section4 {
-      padding: 20px 10px;
+    padding: 20px 10px;
   }
 
   .content-section4 h1 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .content-section4 p {
-      font-size: 12px;
-      line-height: 20px;
+    font-size: 12px;
+    line-height: 20px;
   }
 
   .btn4-section p {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .btn4-section .btn4 {
-      padding: 8px 16px;
-      font-size: 12px;
+    padding: 8px 16px;
+    font-size: 12px;
   }
 }
