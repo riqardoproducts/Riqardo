@@ -1,275 +1,313 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Nunito Sans", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
 header {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    width: 100%;
-  }
-  li {
-    list-style: none;
-  }
-  a {
-    color: #214842;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .navbar {
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-    background-color: transparent;
-    transition: background-color 1s ease;
-  }
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #214842;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
 
-  .nav-item a {
-    color: #214842;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  .navbar.lazy-nav {
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  }
-  .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-  }
-  
-  .nav-branding {
-    font-family: "Poppins", sans-serif;
-  }
-  .nav-link {
-    transition: 0.7s ease;
-  }
-  .logo {
-    width: 130px;
-    height: 130px;
-    margin-left: 10px;
-  }
-  .dropdown {
-    position: absolute;
-    background-color: white;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    z-index: 999;
-    opacity: 0;
-    visibility: hidden;
-    transition: transform 1s, opacity 1s;
-  }
-  
-  .nav-menu li {
-    position: relative;
-  }
-  
-  .nav-menu li:hover .dropdown {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .dropdown li {
-    width: 150px;
-  }
-  
-  .dropdown li a {
-    padding: 0.7rem 2rem;
-    color: black;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown li a:hover {
-    background-color: #f0f0f0;
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: transparent;
+  transition: background-color 1s ease;
+}
+
+.nav-item a {
+  color: #214842;
+  text-decoration: none;
+  font-size: 16px;
+}
+.navbar.lazy-nav {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-family: "Poppins", sans-serif;
+}
+.nav-link {
+  transition: 0.7s ease;
+}
+.logo {
+  width: 130px;
+  height: 130px;
+  margin-left: 10px;
+  object-fit: cover;
+}
+.dropdown {
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 1s, opacity 1s;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown li {
+  width: 150px;
+}
+
+.dropdown li a {
+  padding: 0.7rem 2rem;
+  color: black;
+  display: block;
+  text-align: left;
+}
+
+.dropdown li a:hover {
+  background-color: #f0f0f0;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.section-1 {
+  width: 100%;
+  height: 70vh;
+}
+.content-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/fresh-coffee-steams-wooden-table-close-up-generative-ai.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 50%;
+}
+.sub-content h1 {
+  color: green;
+  font-size: 40px;
+}
+.sub-content p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+}
+.sub-content > * {
+  padding: 10px;
+}
+.section-2 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.section-2-left {
+  width: 70%;
+}
+.section-2-right {
+  width: 30%;
+  min-height: 50vh;
+  height: 600px;
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+.section-2-right h1 {
+  color: #198754;
+  padding: 30px;
+}
+.section-2-right ul li {
+  padding: 10px;
+  list-style: none;
+}
+.section-2-right ul li > * {
+  padding: 5px;
+}
+.sec-2-content-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sec-2-card {
+  height: 500px;
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin: 20px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  padding-top: 15px;
+}
+.card-img {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img img {
+  object-fit: cover;
+  height: 90%;
+  width: 90%;
+  border-radius: 20px;
+}
+.card-head {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.card-price {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.card-details {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.buy-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  height: 10%;
+  background-color: rgb(243, 208, 8);
+  border-radius: 20px;
+}
+.buy-button button {
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  color: green;
+  background-color: transparent;
+}
+
+@media (max-width: 1054px) {
+  header {
+    position: sticky;
   }
   .hamburger {
-    display: none;
-    cursor: pointer;
-  }
-  .bar {
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: black;
   }
-  @media (max-width: 1054px) {
-    .hamburger {
-      display: block;
-    }
-    /* .logo{
+  /* .logo{
       display: none;
     } */
-    .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu {
-      position:fixed;
-      left: -110%;
-      top: 115px;
-      gap: 0;
-      flex-direction: column;
-      background-color: white;
-      width: 50%;
-      height: 80vh;
-      transition: 0.3s;
-    }
-    .nav-item {
-      margin: 16px 0;
-    }
-    .dropdown li a:hover {
-      background-color: black;
-    }
-    .nav-menu.active {
-      left: 0;
-    }
-  
-  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
   }
-.section-1{
-    
-    width: 100%;
-    height: 70vh;
-}
-.content-1{
-    width: 100%;
-    height: 100%;
-    background-image: url(./images/fresh-coffee-steams-wooden-table-close-up-generative-ai.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-.sub-content{
-    display: flex;
+  .nav-menu {
+    position: absolute;
+    left: -110%;
+    top: 115px;
+    gap: 0;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
     width: 50%;
-}
-.sub-content h1{
-    color: green;
-    font-size: 40px;
-    
-}
-.sub-content p{
-    color: white;
+    height: 83vh;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .dropdown li a:hover {
+    background-color: black;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .nav-item a {
+    color: black;
     font-size: 20px;
-    text-align: center;
-    line-height: 25px;
-}
-.sub-content > *{
-    padding: 10px;
-}
-.section-2{
-    width: 100%;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-}
-.section-2-left{
-    width: 70%;
-}
-.section-2-right{
-    width: 30%;
-    min-height: 50vh;
-    height:600px;
-    position: sticky;
-    top:0;
-    right: 0
-}
-.section-2-right h1{
-    color: #198754;
-    padding: 30px;
+  }
+  .navbar {
+    background-color: white;
+  }
 
-}
-.section-2-right ul li{
-    padding: 10px;
-    list-style: none;
-}
-.section-2-right ul li > *{
-    padding: 5px;
-}
-.sec-2-content-1{
+  .section-2 {
+    flex-direction: column-reverse;
+  }
+  .section-2-right {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.sec-2-card{
+    height: auto;
+    position: static;
+  }
+  .section-2-left {
+    width: 100%;
+  }
+  .sec-2-card {
     height: 500px;
-    flex-basis: 25%;
+    flex-basis: 45%;
     flex-grow: 1;
     margin: 20px;
     position: relative;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0,0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     padding-top: 15px;
-
-}
-.card-img{
-    height: 250px;
-    width: 100%;
+  }
+  .sub-content {
     display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-.card-img img{
-    object-fit: cover;
-    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
     width: 90%;
-    border-radius: 20px;
-}
-.card-head {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-.card-price{
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-.card-details{
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-.buy-button{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    height: 10%;
-    background-color: rgb(243, 208, 8);
-    border-radius: 20px;
-}
-.buy-button button{
-    padding: 10px 20px;
-    width: 100%;
-    cursor: pointer;
-    border: none;
-    color:green;
-    background-color: transparent;
+  }
 }

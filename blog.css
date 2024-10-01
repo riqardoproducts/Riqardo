@@ -57,6 +57,7 @@ a {
   width: 130px;
   height: 130px;
   margin-left: 10px;
+  object-fit: cover;
 }
 .dropdown {
   position: absolute;
