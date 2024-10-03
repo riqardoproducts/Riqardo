@@ -108,6 +108,9 @@ a {
   background-color: black;
 }
 @media (max-width: 1054px) {
+  .navbar {
+    background-color: white;
+  }
   .hamburger {
     display: block;
   }
