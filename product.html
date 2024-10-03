@@ -6,45 +6,58 @@
     <title>Products</title>
     <link rel="stylesheet" href="./product.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="shortcut icon" href="images/Riqardo-01.png" />
   </head>
-  <body><header>
-    <nav class="navbar" id="nav">
-      <div class="logo">
-        <a href="#" class="nav-branding"
-          ><img class="logo" src="./images/Riqardo-01.png"
-        /></a>
-      </div>
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="./about.html" class="nav-link">About us</a></li>
-        <li class="nav-item"><a href="./contact.html" class="nav-link">Contact us</a></li>
-        <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
-        <li class="nav-item">
-          <a href="./product.html" class="nav-link">Products</a>
-          <!-- <ul class="dropdown">
+  <body>
+    <header>
+      <nav class="navbar" id="nav">
+        <div class="logo">
+          <a href="#" class="nav-branding"
+            ><img class="logo" src="./images/Riqardo-01.png"
+          /></a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="./product.html" class="nav-link">Products</a>
+            <!-- <ul class="dropdown">
             <li><a href="#">Product1</a></li>
             <li><a href="#">Product2</a></li>
             <li><a href="#">Product3</a></li>
             <li><a href="#">Product4</a></li>
           </ul> -->
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Buy on Amazon</a>
-        </li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-  </header>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Buy on Amazon</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
     <div class="section-1">
       <div class="content-1">
         <div class="sub-content">
           <h1>Instant Coffee Products</h1>
           <p>
-            A journey across the globe.Coffee lovers know that a good cup of coffee is more than just a beverage—it’s an experience. But with so many varieties, flavors, and origins, what makes a coffee truly the best in the world?
+            A journey across the globe.Coffee lovers know that a good cup of
+            coffee is more than just a beverage—it’s an experience. But with so
+            many varieties, flavors, and origins, what makes a coffee truly the
+            best in the world?
           </p>
         </div>
       </div>
@@ -52,6 +65,23 @@
     <div class="section-2">
       <div class="section-2-left">
         <div class="sec-2-content-1">
+          <div class="sec-2-card">
+            <div class="card-img"><img src="./images/b5.png" alt="" /></div>
+            <div class="card-head">
+              <h2>Riqardo Instant Turkish Hazelnut</h2>
+            </div>
+            <div class="card-details"><p>Quantity:350g</p></div>
+            <div class="card-price">
+              <h3><i class="ph ph-currency-inr"></i>299</h3>
+            </div>
+            <div class="buy-button">
+              <button
+                onclick="sendToWhatsApp('Riqardo Instant Turkish Hazelnut','350g', '299')"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
           <div class="sec-2-card">
             <div class="card-img"><img src="./images/b6.png" alt="" /></div>
             <div class="card-head"><h2>Riqardo Instant Caramel Coffee</h2></div>
@@ -68,23 +98,10 @@
             </div>
           </div>
           <div class="sec-2-card">
-            <div class="card-img"><img src="./images/b8.png" alt="" /></div>
-            <div class="card-head"><h2>Riqardo Instant French Vanilla Coffee</h2></div>
-            <div class="card-details"><p>Quantity:350g</p></div>
-            <div class="card-price">
-              <h3><i class="ph ph-currency-inr"></i>299</h3>
-            </div>
-            <div class="buy-button">
-              <button
-                onclick="sendToWhatsApp('Riqardo Instant French Vanilla Coffee','350g', '299')"
-              >
-                BUY NOW
-              </button>
-            </div>
-          </div>
-          <div class="sec-2-card">
             <div class="card-img"><img src="./images/b7.png" alt="" /></div>
-            <div class="card-head"><h2>Riqardo Instant English Butterscotch</h2></div>
+            <div class="card-head">
+              <h2>Riqardo Instant English Butterscotch</h2>
+            </div>
             <div class="card-details"><p>Quantity:300g</p></div>
             <div class="card-price">
               <h3><i class="ph ph-currency-inr"></i>399</h3>
@@ -98,7 +115,43 @@
             </div>
           </div>
           <div class="sec-2-card">
-            <div class="card-img"><img src="./images/b11 (1).png" alt="" /></div>
+            <div class="card-img"><img src="./images/b14.png" alt="" /></div>
+            <div class="card-head">
+              <h2>Riqardo Instant Coffee Classic</h2>
+            </div>
+            <div class="card-details"><p>Quantity:300g</p></div>
+            <div class="card-price">
+              <h3><i class="ph ph-currency-inr"></i>399</h3>
+            </div>
+            <div class="buy-button">
+              <button
+                onclick="sendToWhatsApp('Riqardo Instant Coffee Classic','300g', '399')"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="sec-2-card">
+            <div class="card-img"><img src="./images/b8.png" alt="" /></div>
+            <div class="card-head">
+              <h2>Riqardo Instant French Vanilla Coffee</h2>
+            </div>
+            <div class="card-details"><p>Quantity:350g</p></div>
+            <div class="card-price">
+              <h3><i class="ph ph-currency-inr"></i>299</h3>
+            </div>
+            <div class="buy-button">
+              <button
+                onclick="sendToWhatsApp('Riqardo Instant French Vanilla Coffee','350g', '299')"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="sec-2-card">
+            <div class="card-img">
+              <img src="./images/b11 (1).png" alt="" />
+            </div>
             <div class="card-head"><h2>Riqardo Instant Cardom Tea</h2></div>
             <div class="card-details"><p>Quantity:100g</p></div>
             <div class="card-price">
@@ -135,9 +188,7 @@
               <h3><i class="ph ph-currency-inr"></i>599</h3>
             </div>
             <div class="buy-button">
-              <button
-                onclick="sendToWhatsApp('Riqardo Cloves','500g', '599')"
-              >
+              <button onclick="sendToWhatsApp('Riqardo Cloves','500g', '599')">
                 BUY NOW
               </button>
             </div>
@@ -147,13 +198,24 @@
       <div class="section-2-right">
         <h1>Riqardo Product Category</h1>
         <ul>
-          <li> <i class="ph ph-minus-circle"></i>Riqardo Instant Coffee </li>
-          
-          <li><i class="ph ph-minus-circle"></i>Riqardo Instant Coffee classic </li>
-          <li><i class="ph ph-minus-circle"></i>Riqardo Instant coffee hazelnut</li>
-          <li><i class="ph ph-minus-circle"></i>Riqardo Instant coffee Vanilla</li>
-          <li><i class="ph ph-minus-circle"></i>Riqardo Instant coffee butterscotch</li>
-          <li><i class="ph ph-minus-circle"></i>Riqardo Instant coffee caramel</li>
+          <li><i class="ph ph-minus-circle"></i>Riqardo Instant Coffee</li>
+
+          <li>
+            <i class="ph ph-minus-circle"></i>Riqardo Instant Coffee classic
+          </li>
+          <li>
+            <i class="ph ph-minus-circle"></i>Riqardo Instant coffee hazelnut
+          </li>
+          <li>
+            <i class="ph ph-minus-circle"></i>Riqardo Instant coffee Vanilla
+          </li>
+          <li>
+            <i class="ph ph-minus-circle"></i>Riqardo Instant coffee
+            butterscotch
+          </li>
+          <li>
+            <i class="ph ph-minus-circle"></i>Riqardo Instant coffee caramel
+          </li>
         </ul>
       </div>
     </div>
