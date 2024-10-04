@@ -238,7 +238,7 @@ a {
   color: rgb(243, 208, 8);
   font-size: 18px;
   border: none;
-  border-bottom: 2px solid rgb(243, 208, 8);
+  border-bottom: 2px solid #efc368;
 }
 .left-content > * {
   padding: 20px 0px;
@@ -983,6 +983,147 @@ img {
 .js-content {
   margin-top: 50px;
 }
+.footer {
+  width: 100%;
+  background-color: #214842;
+  padding: 40px 0px;
+}
+.footer-contents ul li {
+  list-style: none;
+  padding: 5px 10px;
+  color: white;
+}
+.phone-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-contents {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer-contents-first {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-contents-first h3 {
+  color: white;
+  padding-bottom: 15px;
+  padding-right: 60px;
+}
+.footer-contents-shop {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-contents-shop h3 {
+  padding-bottom: 13px;
+  color: white;
+  font-weight: lighter;
+}
+
+.footer-contents-shop ul li {
+  list-style: none;
+  padding-bottom: 8px;
+  color: white;
+}
+.logos {
+  width: 70%;
+  height: 40px;
+  display: flex;
+}
+.logos img {
+  height: 100%;
+  object-fit: contain;
+  width: 45%;
+  padding-left: 15px;
+}
+.footer-contents h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: lighter;
+}
+.logo-img {
+  height: 50px;
+  width: 150px;
+}
+.footer-contents-grid {
+  width: 30%;
+  padding-right: 10px;
+}
+
+.footer-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  height: auto;
+}
+.item-footer-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 20px;
+}
+.item-footer-2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 20px;
+}
+.item-footer-3 {
+  height: 100%;
+  width: 100%;
+}
+.item-footer-3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 20px;
+}
+.item-footer-4 {
+  height: 100%;
+  width: 100%;
+}
+.item-footer-4 img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 20px;
+}
+.item-footer-5 {
+  height: 100%;
+  width: 100%;
+}
+.item-footer-5 img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 20px;
+}
+.item-footer-6 {
+  height: 100%;
+  width: 100%;
+}
+.item-footer-6 img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 20px;
+}
 @media (max-width: 1200px) {
   .section-1 {
     display: flex;
@@ -1555,4 +1696,84 @@ img {
     padding: 8px 16px;
     font-size: 12px;
   }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .footer-main{
+    flex-wrap: wrap;
+  }
+  .item-footer-1{
+    height: 100%;
+    width: 100%;
+  }
+  .footer-main div{
+    flex-basis: 100%;
+    padding-top: 40px;
+  }
+  .footer-contents-first{
+    align-items: start;
+    justify-content: start;
+    padding-left: 20px;
+  }
+  .footer-contents-first h3{
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+  .logos{
+    align-items: start;
+    justify-content: start;
+
+  }
+  .footer-contents-shop{
+    align-items: start;
+    justify-content: space-evenly;
+    padding-left: 20px;
+  }
+  .footer-contents-shop ul li{
+    padding: 40px 0px;
+    font-size: 20px;
+   }
+  }
+@media (max-width: 780px) {
+  
+  .footer-main div{
+    flex-basis: 100%;
+    padding-top: 40px;
+  }
+  .footer-contents-first{
+    align-items: center;
+    justify-content: center;
+  }
+  .logos{
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-contents-shop{
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-grid{
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .footer-contents ul li{
+    padding-bottom: 0px;
+  }
+  .footer-contents-grid{
+    width: 30%;
+    padding-right: 0px;
+    height: auto;
+  }
+  .image-container {
+    width: 80%;
+    
+  }
+ 
 }
