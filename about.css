@@ -619,6 +619,7 @@ a {
   .footer-main div {
     flex-basis: 50%;
     padding-top: 40px;
+    box-sizing: border-box;
   }
   .footer-contents-first {
     align-items: start;
