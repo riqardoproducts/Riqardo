@@ -459,7 +459,6 @@ a {
 .footer-contents-first h3 {
   color: white;
   padding-bottom: 15px;
-  padding-right: 60px;
 }
 .footer-contents-shop {
   width: 20%;
@@ -482,11 +481,12 @@ a {
   width: 70%;
   height: 40px;
   display: flex;
+  justify-content: center
 }
 .logos img {
   height: 100%;
   object-fit: contain;
-  width: 45%;
+  width: 80%;
 }
 .footer-contents h3 {
   padding-top: 10px;
