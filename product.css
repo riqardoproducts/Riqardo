@@ -177,7 +177,7 @@ a {
   flex-wrap: wrap;
 }
 .sec-2-card {
-  height: 500px;
+  height: 450px;
   flex-basis: 25%;
   flex-grow: 1;
   margin: 20px;
